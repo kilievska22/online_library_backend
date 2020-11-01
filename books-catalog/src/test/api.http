@@ -1,0 +1,84 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+####genres api
+POST http://localhost:8083/genres
+Content-Type: application/x-www-form-urlencoded
+
+title=classicism&description=desc&period=1234
+
+###
+GET http://localhost:8083/genres
+Content-Type: application/x-www-form-urlencoded
+
+###
+DELETE http://localhost:8083/genres/2cd73146-89d5-4173-8af5-efa1d36d44eb
+
+###
+PATCH http://localhost:8083/genres/7a5b94a9-51db-4117-9acf-94dde496924d
+Content-Type: application/x-www-form-urlencoded
+
+title=classicism12&description=desc&period=123456
+
+####authors api
+POST http://localhost:8083/authors
+Content-Type: application/x-www-form-urlencoded
+
+name=name_sname&date_of_birth=2020-01-20&biography=bio&genre=7a5b94a9-51db-4117-9acf-94dde496924d
+
+###
+GET http://localhost:8083/authors
+Content-Type: application/x-www-form-urlencoded
+
+###
+DELETE http://localhost:8083/authors/b9e7e9e3-8254-4785-8a77-8d68c9c8f97f
+
+###
+PATCH http://localhost:8083/authors/898b692b-bd94-48ab-8e56-211d712b1e94
+Content-Type: application/x-www-form-urlencoded
+
+name=name_sname1&date_of_birth=2020-01-20&biography=bio&genre=7a5b94a9-51db-4117-9acf-94dde496924d
+
+####books api
+POST http://localhost:8083/books
+Content-Type: application/x-www-form-urlencoded
+
+title=title1234&plot=plot&genre=7a5b94a9-51db-4117-9acf-94dde496924d&authors=898b692b-bd94-48ab-8e56-211d712b1e94
+
+###
+GET http://localhost:8083/books
+Content-Type: application/x-www-form-urlencoded
+
+###
+DELETE http://localhost:8083/books/1d4fe483-58a7-466f-ac37-4d3fd9d23099
+
+###
+PATCH http://localhost:8083/books/cbe1499e-d60c-40da-942f-a26146d092fc
+Content-Type: application/x-www-form-urlencoded
+
+title=title&plot=plot&genre=7a5b94a9-51db-4117-9acf-94dde496924d&authors=898b692b-bd94-48ab-8e56-211d712b1e94
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

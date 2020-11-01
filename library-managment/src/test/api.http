@@ -1,0 +1,139 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+###employees api
+POST http://localhost:8082/employees
+Content-Type: application/x-www-form-urlencoded
+
+name=namem&working_time=8&salary=20000&position=pos&phone=076567900&email=email
+
+###
+GET http://localhost:8082/employees
+Content-Type: application/x-www-form-urlencoded
+
+###
+DELETE http://localhost:8082/employees/594aeeaf-3ed1-4979-be4f-89b999805b2a
+###
+PATCH http://localhost:8082/employees/2d89a972-2942-47ed-bde9-e23bed088faf
+Content-Type: application/x-www-form-urlencoded
+
+name=name123545&working_time=8&salary=20000&position=pos&phone=076567900&email=email
+
+
+####members api
+POST http://localhost:8082/members
+Content-Type: application/x-www-form-urlencoded
+
+name=name_sname&membership_start=2020-01-20&membership_expiration=2020-01-21&email=mail@gmail.com&phone=0988778
+
+###
+GET http://localhost:8082/members
+Content-Type: application/x-www-form-urlencoded
+
+###
+GET http://localhost:8082/members/ea571578-d19c-410f-b780-befb3cbfe889
+Content-Type: application/x-www-form-urlencoded
+
+###
+DELETE http://localhost:8082/members/d1e95bc2-42dc-4fba-ab89-f2c9849d53e4
+
+###
+PATCH http://localhost:8082/members/ea571578-d19c-410f-b780-befb3cbfe889
+Content-Type: application/x-www-form-urlencoded
+
+name=name_sname1233&membership_start=2020-01-20&membership_expiration=2020-01-21&email=mail@gmail.com&phone=0988778
+
+####editions api
+POST http://localhost:8082/editions
+Content-Type: application/x-www-form-urlencoded
+
+Id=62c5e4e4-e6ff-447f-bfbe-d96b1bee0438&num_pages=100
+###
+GET http://localhost:8082/editions
+Content-Type: application/x-www-form-urlencoded
+
+###
+GET http://localhost:8082/editions/62c5e4e4-e6ff-447f-bfbe-d96b1bee0438
+Content-Type: application/x-www-form-urlencoded
+###
+##DELETE http://localhost:8082/editions/eda7b3c8-1d06-45f3-8f0b-2bf067064d3b
+
+###
+##PATCH http://localhost:8082/editions/7933261a-7e32-47cd-8221-8a4eeb3080f7
+#Content-Type: application/x-www-form-urlencoded
+
+#Id=ef3f57ad-1008-4bc4-b3a6-ddef49a09ec3&num_pages=86*/
+
+####borrowings api
+POST http://localhost:8082/borrowings
+Content-Type: application/x-www-form-urlencoded
+
+from=2020-01-20&to=2020-02-20&memberId=ea571578-d19c-410f-b780-befb3cbfe889&editionId=eda7b3c8-1d06-45f3-8f0b-2bf067064d3b&employeeId=3eb00f66-0e0c-47b1-8edf-6391f8fa8a22
+
+###
+GET http://localhost:8082/borrowings
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYwNTA1MDU0OH0.samN5QwD47s-KphEy6JLaxu7JLyRndxKJhM5F_qyniI8rD4HAeFluqnIGwCox0wqpNOZdVgsSPLqpeCPl5XABA
+
+###
+GET http://localhost:8082/borrowings/return/1c2938d7-1ea1-4dac-bf0f-5ce3ec57118d
+Content-Type: application/x-www-form-urlencoded
+
+
+###
+DELETE http://localhost:8082/borrowings/34030aea-c54d-4568-94ed-350df2b25fbe
+
+###
+PATCH http://localhost:8082/borrowings/1c2938d7-1ea1-4dac-bf0f-5ce3ec57118d
+Content-Type: application/x-www-form-urlencoded
+
+from=2020-01-20&to=2020-02-20&memberId=ea571578-d19c-410f-b780-befb3cbfe889&editionId=eda7b3c8-1d06-45f3-8f0b-2bf067064d3b&employeeId=3eb00f66-0e0c-47b1-8edf-6391f8fa8a22&active=true
+
+###penalties api
+POST http://localhost:8082/penalties
+Content-Type: application/x-www-form-urlencoded
+
+Id=1c2938d7-1ea1-4dac-bf0f-5ce3ec57118d&givenAt=2020-02-20&dueDate=2020-02-25&price=300
+
+###
+GET http://localhost:8082/penalties
+Content-Type: application/x-www-form-urlencoded
+
+###
+DELETE http://localhost:8082/penalties/1f890ba9-2b23-4205-a5bb-532b1ae17074
+
+###
+GET http://localhost:8082/penalties/pay/b8ac3d86-b821-48e0-b416-3ea4ea4c3ce0
+Content-Type: application/x-www-form-urlencoded
+
+##Id=1c2938d7-1ea1-4dac-bf0f-5ce3ec57118d&givenAt=2020-02-20&dueDate=2020-02-25&price=350
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

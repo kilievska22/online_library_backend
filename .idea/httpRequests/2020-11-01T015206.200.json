@@ -1,0 +1,74 @@
+{
+  "content": [
+    {
+      "id": {
+        "id": "3eb00f66-0e0c-47b1-8edf-6391f8fa8a22"
+      },
+      "version": 0,
+      "name": "ime",
+      "working_time": 8,
+      "salary": {
+        "currency": "MKD",
+        "amount": 20000
+      },
+      "position": "pos",
+      "email": "email",
+      "phone": "076567900"
+    },
+    {
+      "id": {
+        "id": "2d89a972-2942-47ed-bde9-e23bed088faf"
+      },
+      "version": 0,
+      "name": "name123545",
+      "working_time": 4,
+      "salary": {
+        "currency": "MKD",
+        "amount": 3000
+      },
+      "position": "pos",
+      "email": "email",
+      "phone": "076567900"
+    },
+    {
+      "id": {
+        "id": "1df5b8d3-d8ee-4ac0-9cba-d2d8fc62998f"
+      },
+      "version": 0,
+      "name": null,
+      "working_time": 6,
+      "salary": {
+        "currency": "MKD",
+        "amount": 6777
+      },
+      "position": "",
+      "email": "kateilievsk92@gmail.com",
+      "phone": "56788"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": true,
+      "sorted": false,
+      "empty": true
+    },
+    "offset": 0,
+    "pageSize": 5,
+    "pageNumber": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 3,
+  "totalPages": 1,
+  "last": true,
+  "number": 0,
+  "size": 5,
+  "sort": {
+    "unsorted": true,
+    "sorted": false,
+    "empty": true
+  },
+  "first": true,
+  "numberOfElements": 3,
+  "empty": false
+}
